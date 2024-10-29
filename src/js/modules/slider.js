@@ -11,10 +11,12 @@ export default function slider(
   const nextBtn = document.querySelector(nextBtnSelector)
   const prevBtn = document.querySelector(prevBtnSelector)
 
+  if (!slidesWrapper || !slidesField || !slides || !nextBtn || !prevBtn) return
+
   let offset = 0
 
   function updateSlideWidths() {
-    const width = window.getComputedStyle(slidesWrapper).width
+    const width = getComputedStyle(slidesWrapper).width
 
     const slideWidth = parseFloat(width)
 

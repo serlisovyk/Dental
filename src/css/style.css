@@ -1,5 +1,4 @@
 /* #region Page */
-@import 'reset.css';
 
 :root {
   --blue: #2378c9;
@@ -1324,6 +1323,7 @@ body {
   padding-bottom: 60px;
 }
 .connect__title {
+  text-align: center;
   font-size: 42px;
   color: var(--dark);
   margin-bottom: 24px;
